@@ -195,7 +195,11 @@ footer {
 }
 body {
   font-size: 62.5%;
-  padding: 0 20%;
+  width: 80%;
+  margin: 0 auto;
+}
+.home {
+  margin: 0 auto;
 }
 .home .intro h2 {
   padding: 15px;
@@ -238,6 +242,19 @@ body {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  box-sizing: border-box;
+  background-color: #22283A;
+  width: 30%;
+  border-radius: 6%;
+}
+.home .walk .walk-text .btn p {
+  font-size: 2rem;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-family: ;
 }
 .home .walk .walk-img {
   width: 46%;
