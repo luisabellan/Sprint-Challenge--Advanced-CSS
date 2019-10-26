@@ -301,6 +301,13 @@ body .home .walk .walk-text h3 {
 body .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+body .home .walk .walk-text h2 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+body .home .walk .walk-text form {
+  margin-bottom: 1em;
+}
 body .home .walk .walk-text .btn {
   box-sizing: border-box;
   background-color: #22283A;
