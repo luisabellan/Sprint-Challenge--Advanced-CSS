@@ -17,13 +17,21 @@ body {
     .intro {
       width: 100%;
       margin: auto;
-
       @media @phone {
+        width: 100%;
+        margin: 0 auto;
       }
+     
 
       img {
         width: inherit;
         margin: 0 auto;
+        border-radius: 1rem;
+        @media @phone {
+          width: 100%;
+          margin: 0 auto;
+          border-radius: 1rem;
+        }
 
       }
       h2 {

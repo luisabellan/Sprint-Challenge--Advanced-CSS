@@ -183,6 +183,10 @@ nav .nav-right a {
   margin-right: 1em;
   color: #23293B;
 }
+nav .nav-right a:hover {
+  /*stretch*/
+  border-bottom: 0.4rem solid #23293B;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -212,9 +216,23 @@ body .home .intro {
   width: 100%;
   margin: auto;
 }
+@media (max-width:500px) {
+  body .home .intro {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 body .home .intro img {
   width: inherit;
   margin: 0 auto;
+  border-radius: 1rem;
+}
+@media (max-width:500px) {
+  body .home .intro img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem;
+  }
 }
 body .home .intro h2 {
   padding: 15px;
