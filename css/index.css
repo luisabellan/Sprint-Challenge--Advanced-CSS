@@ -287,13 +287,13 @@ body {
   text-align: center;
   padding: 0.5rem;
 }
-.home .walk .walk-text:hover {
+.home .walk .walk-text .btn:hover {
   box-sizing: border-box;
   background-color: white;
   width: 30%;
   border-radius: 6%;
 }
-.home .walk .walk-text:hover a p {
+.home .walk .walk-text .btn:hover a p {
   font-size: 2rem;
   color: #22283A;
   margin: 0 auto;
