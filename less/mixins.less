@@ -1,22 +1,21 @@
 // Mixins Here
 
-.buttons(){
+.buttons(@bcolor,@width,@pcolor,@rad){
 // @color, @width, @padding
  //   width: @width;
  //   padding: @padding;
 
     box-sizing: border-box;
-    background-color:@btn-bg-color;
-    width: 30%;
-    border-radius: 6%;
+    background-color:@bcolor;
+    width: @width;
+    border-radius: @rad;
 
     p{
         font-size: 2rem;
-        color: white;
+        color: @color;
         margin: 0 auto;
         text-align: center;
         padding: .5rem;
-        font-family: ;
     }
 
     
