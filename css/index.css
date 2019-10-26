@@ -308,11 +308,28 @@ body .home .walk .walk-text h2 {
 body .home .walk .walk-text form {
   margin-bottom: 1em;
 }
+body .home .walk .walk-text form input,
+body .home .walk .walk-text form textarea {
+  width: 100%;
+}
+body .home .walk .walk-text form input.btn-subscribe {
+  padding: 1em;
+  color: white;
+  background-color: #23293B;
+  border-radius: 1rem;
+  font-size: 3em;
+  min-width: 14rem;
+}
+body .home .walk .walk-text form input.btn-subscribe:hover {
+  color: #23293B;
+  background-color: white;
+}
 body .home .walk .walk-text .btn {
   box-sizing: border-box;
   background-color: #22283A;
   width: 30%;
-  border-radius: 6%;
+  border-radius: 1.2rem;
+  min-width: 14rem;
 }
 body .home .walk .walk-text .btn a p {
   font-size: 2rem;
