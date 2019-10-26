@@ -135,7 +135,12 @@ body {
           input.btn-subscribe:hover {
             color: @ebony-clay;
             background-color: white;
-            width: 100%;
+            width: 14rem;
+
+            @media @mobile {
+              width: unset;
+            }
+            
           }
         }
         .btn {
