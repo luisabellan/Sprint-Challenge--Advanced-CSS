@@ -129,6 +129,8 @@ body {
             border-radius: 1rem;
             font-size: 3em;
             min-width: 14rem;
+
+        
             
             
           }
@@ -137,8 +139,8 @@ body {
             background-color: white;
             width: 14rem;
 
-            @media @mobile {
-              width: unset;
+            @media @phone {
+              width: 100%;
             }
             
           }
@@ -155,6 +157,18 @@ body {
         }
         .btn:hover {
           .buttons(white, 30%, @btn-bg-color, 6%);
+        }
+        .btn_signup{
+          
+          @media @phone{
+            width: 100%;
+          }
+
+        }
+        .btn_signup:hover{
+          @media @phone{
+            width: 100%;
+          }
         }
       }
 

@@ -323,7 +323,12 @@ body .home .walk .walk-text form input.btn-subscribe {
 body .home .walk .walk-text form input.btn-subscribe:hover {
   color: #23293B;
   background-color: white;
-  width: 100%;
+  width: 14rem;
+}
+@media (max-width:500px) {
+  body .home .walk .walk-text form input.btn-subscribe:hover {
+    width: 100%;
+  }
 }
 body .home .walk .walk-text .btn {
   box-sizing: border-box;
@@ -367,6 +372,16 @@ body .home .walk .walk-text .btn:hover a p {
   margin: 0 auto;
   text-align: center;
   padding: 0.5rem;
+}
+@media (max-width:500px) {
+  body .home .walk .walk-text .btn_signup {
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  body .home .walk .walk-text .btn_signup:hover {
+    width: 100%;
+  }
 }
 body .home .walk .walk-img {
   width: 46%;
