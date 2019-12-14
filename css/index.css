@@ -262,6 +262,10 @@ body {
 }
 .home .walk .walk-text {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 }
 @media (max-width:500px) {
   .home .walk .walk-text {
@@ -275,30 +279,39 @@ body {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  box-sizing: border-box;
-  background-color: #22283A;
-  width: 30%;
-  border-radius: 6%;
-}
-.home .walk .walk-text .btn a p {
-  font-size: 2rem;
-  color: white;
-  margin: 0 auto;
-  text-align: center;
-  padding: 0.5rem;
-}
-.home .walk .walk-text:hover {
+  border: 1px solid #81848E;
+  align-items: center;
   box-sizing: border-box;
   background-color: white;
   width: 30%;
   border-radius: 6%;
+  display: flex;
+  align-self: center;
 }
-.home .walk .walk-text:hover a p {
+.home .walk .walk-text .btn p {
   font-size: 2rem;
   color: #22283A;
-  margin: 0 auto;
   text-align: center;
-  padding: 0.5rem;
+  padding: 1rem;
+  margin: 0 auto;
+  align-self: center;
+}
+.home .walk .walk-text .btn:hover {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #22283A;
+  width: 30%;
+  border-radius: 6%;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover p {
+  font-size: 2rem;
+  color: #81848E;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+  align-self: center;
 }
 .home .walk .walk-img {
   width: 46%;
