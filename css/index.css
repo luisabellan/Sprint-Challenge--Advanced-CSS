@@ -283,6 +283,7 @@ body .home .btn {
   box-sizing: border-box;
   background-color: white;
   width: 30%;
+  min-width: 12rem;
   border-radius: 6%;
   display: flex;
   align-self: center;
@@ -301,6 +302,7 @@ body .home .btn:hover {
   box-sizing: border-box;
   background-color: #22283A;
   width: 30%;
+  min-width: 12rem;
   border-radius: 6%;
   cursor: pointer;
 }

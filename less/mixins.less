@@ -1,33 +1,29 @@
 // Mixins Here
 
-.buttons(@bcolor,@width,@tcolor,@rad){
-// @color, @width, @padding
- //   width: @width;
- //   padding: @padding;
+.buttons(@bcolor, @width, @tcolor, @rad) {
+   // @color, @width, @padding
+   //   width: @width;
+   //   padding: @padding;
 
 
- display: flex;
- align-items: center;
+   display: flex;
+   align-items: center;
 
-    box-sizing: border-box;
-    background-color:@bcolor;
-    width: @width;
-    border-radius: @rad;
+   box-sizing: border-box;
+   background-color: @bcolor;
+   width: @width;
+   min-width: 12rem;
 
-    p{   
-        font-size: 2rem;
-        color: @tcolor;
-        margin: 0 auto;
-        text-align: center;
-        padding: 1rem;
-        align-self: center;
-      }
-       
-  
+   border-radius: @rad;
+
+   p {
+      font-size: 2rem;
+      color: @tcolor;
+      margin: 0 auto;
+      text-align: center;
+      padding: 1rem;
+      align-self: center;
    }
 
-    
-    
 
-    
-
+}
