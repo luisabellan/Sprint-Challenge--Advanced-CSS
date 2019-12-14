@@ -13,20 +13,26 @@ body {
   .home {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 5rem;
+
 
     .intro {
       width: 100%;
       margin: auto;
+      margin-top: 5rem;
+
+
       @media @phone {
         width: 100%;
         margin: 0 auto;
       }
-     
+
 
       img {
         width: inherit;
         margin: 0 auto;
         border-radius: 1rem;
+
         @media @phone {
           width: 100%;
           margin: 0 auto;
@@ -34,6 +40,7 @@ body {
         }
 
       }
+
       h2 {
         padding: 15px;
       }
@@ -41,8 +48,7 @@ body {
       p {
         padding: 0 15px;
 
-        @media @phone {
-        }
+        @media @phone {}
       }
     }
 
@@ -50,6 +56,7 @@ body {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
+      margin-top: 5rem;
 
       img {
         width: 28%;
@@ -63,20 +70,11 @@ body {
       }
 
     }
-    .walk-text {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      justify-items: center;
-      @media @phone {
-        width: 100%;
-  
-      }
-    }
+
 
     .visit-planets {
       padding: 15px;
+      margin-top: 5rem;
 
       h3 {
         margin-top: 11px;
@@ -87,22 +85,49 @@ body {
       }
     }
 
-      .btn {
-        border:  1px solid @waterloo;
-        .buttons(white,30%, @btn-bg-color,6%);
+    .walk {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 5rem;
+
+      .walk-text {
+        width: 50%;
         display: flex;
-        align-self: center;
-        
-        
-      }
-      .btn:hover{
-        .buttons(@btn-bg-color,30%,@waterloo,6%);
-        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+
+
+
+
+        @media @phone {
+          width: 100%;
+
+        }
+
+        h2 {}
+
+        p {
+          margin-top: 3rem;
+
+        }
+
+        .btn {
+          
+          .buttons( 30%, 6%);
+          
+
+
+        }
+
+       
       }
 
       .walk-img {
         width: 46%;
         margin-left: 4%;
+
 
         @media @phone {
           width: 100%;
@@ -112,11 +137,101 @@ body {
         }
 
         img {
-          width: 100%;
-          height: auto;
-          border-radius: 10px;
+          border-radius: 12px;
         }
       }
-    }
-  } // home
 
+    }
+  }
+
+  .subscribe {
+
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    margin-top: 5rem;
+
+    div{
+      margin: 2em 0;
+    }
+
+    h2 {
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+    }
+
+
+    form {
+      display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+      .name {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        p {margin-right: 2em;}
+
+        input {}
+      }
+
+      .email {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        p {margin-right: 2.2em;}
+
+        input {}
+      }
+
+      .subject {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        p {margin-right: 2rem;}
+
+
+        input {}
+      }
+
+      .message {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 3rem;
+
+        p {margin-right: 0.8em;}
+
+
+        input {}
+      }
+
+    }
+
+
+
+
+    .form-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      .btn {
+        .buttons( 30%,  6%);
+        margin-right: 3rem;
+
+      }
+    }
+
+
+  }
+
+
+
+
+
+
+}
