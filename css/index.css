@@ -1,0 +1,414 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+nav .nav-left {
+  margin: 2em 0;
+}
+nav .nav-left h1 {
+  font-size: 3.2rem;
+}
+nav .nav-right {
+  flex-direction: row;
+  margin: 1em  0;
+}
+nav .nav-right a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  margin-right: 1em;
+  color: #23293B;
+}
+nav .nav-right a:hover {
+  /*stretch*/
+  border-bottom: 0.4rem solid #23293B;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-size: 62.5%;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width:500px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+body .home {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+body .home .intro {
+  width: 100%;
+  margin: auto;
+  margin-top: 5rem;
+}
+@media (max-width:500px) {
+  body .home .intro {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+body .home .intro img {
+  width: inherit;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+@media (max-width:500px) {
+  body .home .intro img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem;
+  }
+}
+body .home .intro h2 {
+  padding: 15px;
+}
+body .home .intro p {
+  padding: 0 15px;
+}
+body .home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5rem;
+}
+body .home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width:500px) {
+  body .home .space-images img {
+    width: 100%;
+  }
+}
+body .home .visit-planets {
+  padding: 15px;
+  margin-top: 5rem;
+}
+body .home .visit-planets h3 {
+  margin-top: 11px;
+}
+body .home .visit-planets p {
+  margin-top: 13px;
+}
+body .home .walk {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+body .home .walk .walk-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+@media (max-width:500px) {
+  body .home .walk .walk-text {
+    width: 100%;
+  }
+}
+body .home .walk .walk-text p {
+  margin-top: 3rem;
+}
+body .home .walk .walk-text .btn {
+  box-sizing: border-box;
+  display: flex;
+  align-self: center;
+  min-width: 12rem;
+  margin-top: 3rem;
+  border: 1px solid #22283A;
+  border-radius: 6%;
+  background-color: #F6F6F6;
+  cursor: pointer;
+}
+body .home .walk .walk-text .btn p {
+  font-size: 2rem;
+  color: #22283A;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+  align-self: center;
+}
+body .home .walk .walk-text .btn:hover {
+  background-color: #22283A;
+}
+body .home .walk .walk-text .btn:hover p {
+  color: #F6F6F6;
+}
+body .home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width:500px) {
+  body .home .walk .walk-img {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+}
+body .home .walk .walk-img img {
+  border-radius: 12px;
+}
+body .subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  margin-top: 5rem;
+}
+body .subscribe div {
+  margin: 2em 0;
+}
+body .subscribe h2 {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+body .subscribe form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+body .subscribe form .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+body .subscribe form .name p {
+  margin-right: 2em;
+}
+body .subscribe form .email {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+body .subscribe form .email p {
+  margin-right: 2.2em;
+}
+body .subscribe form .subject {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+body .subscribe form .subject p {
+  margin-right: 2rem;
+}
+body .subscribe form .message {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+}
+body .subscribe form .message p {
+  margin-right: 0.8em;
+}
+body .subscribe .form-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+body .subscribe .form-buttons .btn {
+  box-sizing: border-box;
+  display: flex;
+  align-self: center;
+  min-width: 12rem;
+  margin-top: 3rem;
+  border: 1px solid #22283A;
+  border-radius: 6%;
+  background-color: #F6F6F6;
+  cursor: pointer;
+  margin-right: 3rem;
+}
+body .subscribe .form-buttons .btn p {
+  font-size: 2rem;
+  color: #22283A;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+  align-self: center;
+}
+body .subscribe .form-buttons .btn:hover {
+  background-color: #22283A;
+}
+body .subscribe .form-buttons .btn:hover p {
+  color: #F6F6F6;
+}

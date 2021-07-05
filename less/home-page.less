@@ -1,75 +1,237 @@
 // Home Content
 
-.home {
+body {
+  font-size: 62.5%;
+  width: 80%;
+  margin: 0 auto;
 
-  .intro {
-
-    h2 {
-      padding: 15px;
-    }
-
-    p {
-      padding:0 15px;
-    }
-  
-  }
-
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
+  @media @phone {
     width: 100%;
-
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
+    margin: 0 auto;
   }
 
-  .visit-planets {
-    padding: 15px;
+  .home {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
 
-    h3 {
-      margin-top: 11px;
-    }
 
-    p {
-      margin-top: 13px;
-    }
-  }
+    .intro {
+      width: 100%;
+      margin: auto;
+      margin-top: 5rem;
 
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
 
-    .walk-text {
-      width: 50%;
+      @media @phone {
+        width: 100%;
+        margin: 0 auto;
+      }
 
-      h3 {
-        margin-bottom: 10px;
+
+      img {
+        width: inherit;
+        margin: 0 auto;
+        border-radius: 1rem;
+
+        @media @phone {
+          width: 100%;
+          margin: 0 auto;
+          border-radius: 1rem;
+        }
+
+      }
+
+      h2 {
+        padding: 15px;
       }
 
       p {
-        margin-bottom: 26px;
-      }
+        padding: 0 15px;
 
-      .btn {
+        @media @phone {}
       }
     }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
+    .space-images {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 5rem;
+
       img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+        width: 28%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
+
+        @media @phone {
+          width: 100%;
+        }
       }
+
+    }
+
+
+    .visit-planets {
+      padding: 15px;
+      margin-top: 5rem;
+
+      h3 {
+        margin-top: 11px;
+      }
+
+      p {
+        margin-top: 13px;
+      }
+    }
+
+    .walk {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 5rem;
+
+      .walk-text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+
+
+
+
+        @media @phone {
+          width: 100%;
+
+        }
+
+        h2 {}
+
+        p {
+          margin-top: 3rem;
+
+        }
+
+        .btn {
+          
+          .buttons( 30%, 6%);
+          
+
+
+        }
+
+       
+      }
+
+      .walk-img {
+        width: 46%;
+        margin-left: 4%;
+
+
+        @media @phone {
+          width: 100%;
+          margin: 0 auto;
+          margin-top: 3em;
+          margin-bottom: 3em;
+        }
+
+        img {
+          border-radius: 12px;
+        }
+      }
+
     }
   }
-}// home
+
+  .subscribe {
+
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    margin-top: 5rem;
+
+    div{
+      margin: 2em 0;
+    }
+
+    h2 {
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+    }
+
+
+    form {
+      display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+      .name {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        p {margin-right: 2em;}
+
+        input {}
+      }
+
+      .email {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        p {margin-right: 2.2em;}
+
+        input {}
+      }
+
+      .subject {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        p {margin-right: 2rem;}
+
+
+        input {}
+      }
+
+      .message {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 3rem;
+
+        p {margin-right: 0.8em;}
+
+
+        input {}
+      }
+
+    }
+
+
+
+
+    .form-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      .btn {
+        .buttons( 30%,  6%);
+        margin-right: 3rem;
+
+      }
+    }
+
+
+  }
+
+
+
+
+
+
+}

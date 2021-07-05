@@ -1,7 +1,3 @@
-Full Name: Jesus Luis Abellan Matilla
-Display Name: Luis Abellan
-Deployed here: devilish-popcorn.surge.sh
-
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
@@ -37,24 +33,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
-A fully responsive website uses only reponsive units like rems, ems and %, while adaptive websites use also pixels and for that reason they don't scale well.
 
 2. Describe what it means to be mobile first vs desktop first.
-
-It means we start by creating styles for mobile and create breakpoints for larger screens. In mobile first we use min-width for our breakpoints, while in desktop first we use max-width for our breakpoints. 
-
 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-at 62.50% 10 pixels equals 1 rem, so we can use rems easily. We just convert the number of pixels into rems by dividing by 10. 12pixels = 1.2rem.
-
 4. How would you describe preprocessing to someone new to CSS?
-It's a way of writing CSS which is easier to read, wirte and mantain and using a compiler which will translate that code to the standard css which the browser is expecting.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-
-Parametric mixins. Having to keep an eye on the compiler.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
